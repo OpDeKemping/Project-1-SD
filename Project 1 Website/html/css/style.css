@@ -1,0 +1,59 @@
+body {
+    background: white;
+}
+
+/* header: */
+header img {
+    height: 95px;
+    width: 140px;
+}
+
+nav {
+    height: 40px;
+    width: 50%;
+    height: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-links-header {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-link-text {
+    color: black;
+    text-decoration: none;
+}
+
+.header-link-text:hover {
+    color: darkslateblue;
+}
+
+.login-button-box {
+    height: 40px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button button {
+    height: 30px;
+    width: 60px;
+    background: darkslateblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.login-text button {
+    color: white;
+}
