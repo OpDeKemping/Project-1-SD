@@ -4,19 +4,46 @@ components
 -------------------------------------------------------------------------------------------------------
 */
 
-/* body */
+a{
+    text-decoration: none;
+}
+
+.temporary{
+    width: 100%;
+    height: 5000px;
+}
+
+/* basis */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 body {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #cccccc;
     margin: 0;
     padding: 0;
-    height: 3000px;
+    height: 5000px;
     width: 100%;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    width: 100%;
+}
+
 
 /* splitters & compressors */
 .rowsplitter{
@@ -250,7 +277,8 @@ structure
     font-weight: 400;
     margin-left: 10px;
     margin-right: 10px;
-    color: hsl(266, 30%, 26%);
+    color: #3f2e56;
+    text-decoration: none
 }
 
 .head .buttonbox{
@@ -260,8 +288,9 @@ structure
     margin-left: 15px;
     margin-right: 50px;
     border-style: solid;
-    border-color: hsl(266, 30%, 26%);
+    border-color: #3f2e56;
     border-width: 3px;
+    cursor: pointer;
 }
 
 .head .buttonbox .text{
@@ -277,6 +306,16 @@ structure
     border-style: solid;
     border-color: hsl(266, 30%, 26%);
     border-width: 2px;
+    cursor: pointer;
+}
+
+.head .poster:hover{
+    border-color: #10151A;
+    border-width: 3px;
+}
+.head .poster:hover .text{
+    color: #10151A;
+    font-weight: 600;
 }
 
 .head .buttoncube{
@@ -286,8 +325,9 @@ structure
     margin-left: 15px;
     margin-right: 50px;
     border-style: solid;
-    border-color: hsl(266, 30%, 26%);
+    border-color: #3f2e56;
     border-width: 3px;
+    cursor: pointer;
 }
 
 .head .image {
@@ -300,4 +340,104 @@ structure
 .head .imagealternate {
     height: 30px;
     width: 30px;
+}
+
+
+
+/* footspace */
+.foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #6e6eb4;
+    width: 100%;
+    height: 500px;
+}
+
+.foot .text{
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    text-decoration: none
+}
+
+.foot .rowsplitter{
+    width: 100%;
+}
+
+.foot .columnsplitter{
+    height: 300px;
+    width: 30%;
+}
+
+.foot .columnalternatesplitter{
+    height: 300px;
+    width: 30%;
+    border-radius: 25px;
+    border-style: dashed;
+    border-color: #98D3EA;
+    border-width: 3px;
+}
+
+.foot .airsplitter{
+    height: 100px;
+    width: 100%;
+}
+
+.foot .poster{
+    height: 125px;
+    width: 350px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 25px;
+    background-color: #98D3EA;
+    position: relative;
+    bottom: 75px;
+    left: 40px;
+}
+
+.foot .buttonbox{
+    height: 50px;
+    width: 350px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 3px;
+    cursor: pointer;
+}
+
+.foot .buttoncube{
+    height: 100px;
+    width: 300px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+    border-style: dashed;
+    border-color: #98D3EA;
+    border-width: 3px;
+    background-color: #6e6eb4 ;
+}
+
+.foot .buttonbox .text{
+    font-weight: 900;
+}
+
+.foot .buttoncube .text{
+    font-weight: 600;
+}
+
+.foot .image{
+    height: 300px;
+    width: 300px;
+    border-radius: 25px;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #98D3EA;
+}
+
+.foot .imagealternate{
+    height: 100px;
+    width: 300px;
 }

@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roc-Software Developer</title>
     <link rel="stylesheet" href="css/style.css">
+    <audio id="sfx-1" src="sfx/denied.mp3" preload="auto"></audio>
+    <audio id="sfx-2" src="sfx/denied2.mp3" preload="auto"></audio>
+    <audio id="sfx-3" src="sfx/denied3.mp3" preload="auto"></audio>
 </head>
 
+<style>
+body {
+  background-image: url('img/background.png');
+  background-repeat: repeat-y;
+  background-size: contain;
 
-<body>
+}
+</style>
+
+<header>
     <div class="head">
 
         <div class="rowsplitter">
@@ -19,19 +30,19 @@
             
             </div>
             <div class="rowalternatesplitter">
-                <div class="poster">
+                <a class="poster" href="https://www.roc-nijmegen.nl">
                     <H2 class="text">
                         ROC 
                     </H2>
-                </div>
-                <div class="poster">
+                </a>
+                <a class="poster" href="https://www.roc-nijmegen.nl/mbo-opleidingen/ict-media/ict/software-developer-bol">
                     <H2 class="text">
                         Inschrijven 
                     </H2>
-                </div>
+                </a>
 
             </div>
-            <div class="buttonbox">
+            <div class="buttonbox" onclick ="document.getElementById('sfx-1').play();">
                 <H2 class="text">
                     login 
                 </H2>
@@ -42,35 +53,40 @@
                 <img src="img/roc-nijmegen-logo-2025.png" class="image">
             </div>
             <div class="rowcompressor">
-                <div class="poster">
-                    <H2 class="text">
+                <a class="poster" onClick="document.getElementById('info').scrollIntoView();">
+                    <H2 class="text scroller">
                         info 
                     </H2>
-                </div>
-                <div class="poster">
+                </a>
+                <a class="poster" onClick="document.getElementById('links').scrollIntoView();">
                     <H2 class="text">
                         links 
                     </H2>
-                </div>
-                <div class="poster">
+                </a>
+                <a class="poster" onClick="document.getElementById('contact').scrollIntoView();">
                     <H2 class="text">
                         contact 
                     </H2>
-                </div>
-                <div class="poster">
+                </a>
+                <a class="poster" onClick="document.getElementById('classes').scrollIntoView();">
                     <H2 class="text">
                         classes 
                     </H2>
-                </div>
+                </a>
             </div>
             <div class="airsplitter">
             
             </div>
-            <div class="buttoncube">
+            <a class="buttoncube" onclick ="document.getElementById('sfx-2').play();">
+                
                 <img src="img/search.png" class="imagealternate">   
-            </div>
+            </a>
         </div>
     </div>
+</header>
+
+<body>
+    <div class="temporary"></div>
     <!--insert body here-->
 
 
@@ -79,6 +95,68 @@
 </body>
 
 <footer>
+    <div class="foot">
+        <div class="rowsplitter">
+            <div class="rowsplitter">
+                
+            </div>
+            <div class="rowsplitter">
+                <H2 class="text">
+                    heb je nog vragen? wij helpen je graag! 
+                </H2>
+            </div>
+            <div class="rowsplitter">
+                <div class="poster">
+                    <img src="img/roc-nijmegen-logo-alternate.png" class="imagealternate" onclick ="document.getElementById('sfx-3').play();">
+                </div>
+            </div>
+        </div>
+        <div class="rowsplitter">
+            <div class="columnalternatesplitter">
+                <div class="rowsplitter">
+                    <div class="buttonbox" href="https://www.roc-nijmegen.nl">
+                        <H2 class="text">
+                            school website 
+                        </H2>
+                    </div>
+                </div>
+                <div class="rowsplitter">
+                    <div class="buttonbox" href="https://www.roc-nijmegen.nl/organisatie/leerbedrijven/het-servicepunt">
+                        <H2 class="text">
+                            help desk 
+                        </H2>
+                    </div>
+                </div>
+                <div class="rowsplitter">
+                    <div class="buttonbox" href="https://www.roc-nijmegen.nl/locaties">
+                        <H2 class="text">
+                            locaties 
+                        </H2>
+                    </div>
+                </div>
+            </div>
+            <div class="columnsplitter">
+                <div class="rowsplitter">
+                    <H2 class="text">
+                        lijn open van 8:00 tot 16:30. 
+                    </H2>
+                </div>
+                <div class="rowsplitter">
+                    <div class="buttoncube">
+                        <H2 class="text">
+                            024 - 89 04 500 
+                        </H2>
+                    </div>
+                </div>
+            </div>
+            <div class="columnsplitter"> 
+                <img src="img/build.jpg" class="image">  
+            </div>
+        </div>
+        <div class="airsplitter">
+
+        </div>
+    </div>
 </footer>
 
 </html>
