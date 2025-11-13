@@ -30,8 +30,8 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    height: 5000px;
     width: 100%;
+    font-family: 'Montserrat', system-ui;
 }
 
 footer {
@@ -344,7 +344,130 @@ structure
 
 
 
-/* footspace */
+/* body index.html */
+.title-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-text {
+    width: 800px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.whitespace-1 {
+    height: 20px;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box img {
+    height: 275px;
+    width: 550px;
+    border-radius: 20px;
+    border: 2px dashed darkgray;
+}
+
+.details-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-text {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subjects-container {
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.subjects-container h2 {
+    text-align: center;
+}
+
+.subjects-container h4 {
+    text-align: center;
+}
+
+.subjects-box-1 {
+    height: 425px;
+    width: 800px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.subject-info {
+    height: 200px;
+    width: 300px;
+    text-align: center;
+}
+
+.subject-text {
+    font-size: 15px;
+}
+
+.subjects-box-2 {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    width: 1000px;
+}
+
+.img-box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box-2 img {
+    height: 275px;
+    width: 450px;
+    border-radius: 20px;
+    border: 2px dashed darkgray;
+}
+
+.whitespace-2 {
+    height: 50px;
+}
+
+.img-box-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box-3 img {
+    height: 250px;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px dashed darkgray;
+}
+
+/* footer */
 .foot{
     display: flex;
     flex-direction: column;
